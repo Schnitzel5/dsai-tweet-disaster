@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- Template taken from: www.codingnepalweb.com -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NLP Tweet Disaster</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/line.css">
+  <link rel="stylesheet" href="/static/tabler.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div id="alert-state"></div>
+  <div class="wrapper">
+    <div class="input-box">
+      <div class="tweet-area">
+        <span class="placeholder">What's happening?</span>
+        <div id="tweet-content" class="input editable" contenteditable="true" spellcheck="false"></div>
+        <div class="input readonly" contenteditable="true" spellcheck="false"></div>
+      </div>
+      <div class="privacy">
+        <i class="fas fa-globe-asia"></i>
+        <span>Everyone can reply</span>
+      </div>
+    </div>
+    <div class="bottom">
+      <ul class="icons">
+        <li><i class="uil uil-capture"></i></li>
+        <li><i class="far fa-file-image"></i></li>
+        <li><i class="fas fa-map-marker-alt"></i></li>
+        <li><i class="far fa-grin"></i></li>
+        <li><i class="far fa-user"></i></li>
+      </ul>
+      <div class="content">
+        <span class="counter">100</span>
+        <button onclick="submitTweet()">Tweet</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
